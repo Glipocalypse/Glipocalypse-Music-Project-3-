@@ -1,0 +1,80 @@
+body{
+	width: 1205px;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+li p{
+	text-align: left;
+}
+nav ul{
+	text-align: center;
+	list-style-type: none;
+}
+nav li{
+	margin: 0;
+	list-style-type: none;
+	display: inline;
+	padding-right: 50px;
+}
+nav li a{
+	text-decoration: none;
+	color: #000000;
+	font-family: Verdana, sans-serif;
+	border-radius: 7px;
+	border: 2px solid #2266BB;
+	background-color: #BB2200;
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+	text-align: center;
+}
+nav li a:hover{
+	background-color: #22BB00;
+}
+img{
+	display: block;
+}
+li label{
+	text-align: center;
+}
+
+body > font > h2{
+	text-align: center;
+}
+body > font > iframe{
+	display: block;
+	margin: 0 auto;
+}
+	
+#menutree{
+	text-align: center;
+}
+#menutree li {
+   list-style: none;          /* all list item li dots invisible */
+}
+
+li .menu_label + input[type=checkbox] {
+   opacity: 0;             /* checkboxes invisible and use no space */
+}                        /* display: none; is better but fails in ie8 */
+
+li .menu_label {
+    cursor: pointer;        /* cursor changes when you mouse over this class */
+}                         /* could add the many user-select: none; commands here */
+
+li .menu_label + input[type=checkbox] + ol > li
+{
+    display: none;         /* prevents sublists below unchecked labels from displaying */
+}
+
+li .menu_label + input[type=checkbox]:checked + ol > li
+{
+    display: block;         /* display submenu on click */
+}
